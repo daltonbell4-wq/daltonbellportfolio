@@ -23,7 +23,7 @@
 <link rel="canonical" href="https://daltonbell.com/">
 <meta name="theme-color" content="#F1F2EE" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F1213" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231B5E5A'/%3E%3Crect x='8' y='8' width='16' height='16' rx='2' fill='%23F1F2EE'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B5E5A'/%3E%3Ctext x='16' y='22' font-family='Arial, Helvetica, sans-serif' font-weight='800' font-size='16' letter-spacing='-1' fill='%23F1F2EE' text-anchor='middle'%3Edb%3C/text%3E%3C/svg%3E">
 
 <style>
   html { color-scheme: light dark; }
@@ -127,7 +127,7 @@ img{max-width:100%}
   letter-spacing:-.01em;display:flex;align-items:center;gap:.55rem;
   text-decoration:none;
 }
-.mark-dot{width:9px;height:9px;background:var(--accent);border-radius:1px;display:inline-block;flex:none}
+.mark-logo{color:var(--accent);letter-spacing:-.04em}
 .nav-right{display:flex;align-items:center;gap:1.6rem}
 .nav-links{display:flex;gap:1.6rem;align-items:center}
 .nav-cta{
@@ -195,8 +195,8 @@ img{max-width:100%}
 }
 .portrait img{display:block;height:94%;width:auto;max-width:none}
 @media (max-width:820px){
-  .hero-in{grid-template-columns:1fr;gap:1.75rem}
-  .portrait{justify-self:start;max-width:215px;order:-1}
+  .hero-in{grid-template-columns:minmax(0,1fr) auto;gap:1.25rem;align-items:flex-start}
+  .portrait{justify-self:end;width:clamp(72px,24vw,140px);max-width:clamp(72px,24vw,140px)}
 }
 .hero h1{
   font-size:clamp(2.9rem,9.5vw,6.4rem);
@@ -409,7 +409,7 @@ img{max-width:100%}
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="mark" href="#top"><span class="mark-dot"></span>Dalton Bell</a>
+    <a class="mark" href="#top"><span class="mark-logo">db</span>Dalton Bell</a>
     <div class="nav-right">
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
